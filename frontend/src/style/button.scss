@@ -1,0 +1,35 @@
+.button{
+
+    border: none;
+    outline: none;
+    padding-inline: 1.5rem;
+    padding-block: 0.75rem;
+    border-radius: 1rem;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in-out;
+
+    &.primary-button{
+        background-color: #e1034d;
+        color: white;
+
+        &:hover{
+            background-color: #ff1a63;
+            box-shadow: 0 6px 18px rgba(225, 3, 77, 0.35);
+        }
+
+        &:focus-visible{
+            outline: 2px solid #ff1a63;
+            outline-offset: 2px;
+        }
+    }
+
+    &:disabled{
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+
+    &:active{
+        transform: scale(0.9);
+    }
+}
